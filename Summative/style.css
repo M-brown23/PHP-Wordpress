@@ -1,0 +1,832 @@
+/*
+
+Theme Name: Matt's Theme
+
+Theme URI: http://yourwebsite.com/theme
+
+Author: Matt
+
+Author URI: http://yourwebsite.com/
+
+Description: This is my first custom theme!
+
+Version: 1.0.0
+
+License: GNU General Public License v2 or later
+
+Tags: minimal, cool
+
+*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Work+Sans:ital,wght@1,300&display=swap");
+
+/* SCSS Variables */
+
+/* CSS Reset & General Styles*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif !important;
+  line-height: 1.5;
+  background: url("images/photo-1549210194-fb0aac030c32.jpeg") no-repeat center
+    center/cover;
+
+}
+
+.h1 {
+    color: #ffb600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ul{
+
+  margin-top: 20 !important;
+  margin-bottom: 1rem;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands" !important;
+}
+
+
+
+
+a {
+  color: #faf9f6 !important;
+  text-decoration: none;
+  background-color: transparent; // Remove the gray background on active links in IE 10.
+
+  @include hover {
+    color: #ffb600;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+
+.h1 {
+  font-family: sans-serif;
+  font-size: 3.6rem;
+  letter-spacing: 0.2rem;
+  color: #FFB600;
+}
+
+
+nav {
+    float: right;
+    margin-right: 50px;
+    padding-top: 10px;
+    max-width: 100%;
+}
+
+p{
+  margin-top: 10px;
+  font-size: 20px;
+  color: #2b2b2b;
+  margin-left: 10px;
+  max-width: 100%;
+}
+
+.p{
+  margin-top: 10px;
+  font-size: 20px;
+  color: #FFB600;
+  margin-left: 10px;
+}
+
+
+.lead{
+  color: #2b2b2b !i;
+}
+
+
+img {
+  max-width: 100% !important;
+}
+
+.img{
+  float: left;
+    height: 7% !important;
+
+    /* background: url(image-folder/1916142.png) no-repeat center center/cover; */
+    background-size: 35%;
+    margin-left: 1%;
+    margin-top: 52px;
+    padding: 15px;
+}
+
+.img-2{
+    height: 20% !important;
+    width: 64% !important;
+    padding-bottom: 10px;
+    margin-right: 20px;
+}
+
+.img-3{
+    height: 20% !important;
+    width: 46% !important;
+    padding-bottom: 10px;
+    margin-left: 64px;
+    margin: 17px;
+    float: left;
+}
+
+.img-4{
+  align-items: center;
+height: 25% !important;
+width: 99% !important;
+padding-bottom: 10px;
+margin-left: 64px;
+margin: 5px;
+
+}
+
+#card-2{
+  background-color:#2b2b2b;
+  width:150%;
+  border: 5px solid #ffb600;
+  padding: 5px;
+}
+
+
+#col{
+margin-left:12%;
+width: 100% !important;
+padding: 10px;
+}
+
+.bg-image{
+  /* background: url("images/photo-1546519638-68e109498ffc.jpeg") no-repeat center */
+    center/cover;
+    width: 100%;
+    height: 100%;
+}
+
+.list {
+    margin-top: 61px;
+    display: inline-block;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    margin-right: 25px;
+    text-decoration: none;
+}
+
+/* Hero Image*/
+.hero {
+  height: 100%;
+  bottom: 50px;
+}
+
+/*Background Image */
+.hero:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-inner {
+  position: relative;
+  height: 100%;
+}
+
+
+
+.hero-text {
+    position: absolute;
+    top: 30%;
+    margin-left: 5vw;
+}
+
+.color{
+  margin-left: 80px;
+  border-radius: 20px;
+  padding: 20px;
+  bottom: 200px;
+  width: 50%;
+}
+
+  .button {
+    background-color: #FFB600;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 1.8rem;
+    margin-top: 20px;
+    font-size: 1rem;
+    margin-left: 15px;
+    color: #2b2b2b;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+
+.button:hover {
+  background-color: #2b2b2b;
+  color: #ffb600 !important;
+  border: 0.5px solid #ffb600;
+  font-size: 1rem;
+  margin-left: 18px;
+  color: #2b2b2b;
+  text-decoration: none;
+  padding: 0.8rem 1.8rem;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #2b2b2b;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.button-2 {
+  background-color: #FFB600;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.8rem;
+  margin-top: 20px;
+  font-size: 1rem;
+  margin-left: 18px;
+  color: #2b2b2b;
+  text-decoration: none;
+  margin-bottom: 10px;
+
+}
+
+
+.button-2:hover {
+  background-color: #2b2b2b;
+  color: #ffb600 !important;
+}
+
+.button3 {
+  background-color: #FFB600;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.8rem;
+  margin-top: 20px;
+  font-size: 1rem;
+  margin-left: -3px;
+  color: #2b2b2b;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+
+.button3:hover {
+background-color: #2b2b2b;
+color: #ffb600 !important;
+border: 0.5px solid #ffb600;
+font-size: 1rem;
+margin-left: -3px;
+color: #2b2b2b;
+text-decoration: none;
+padding: 0.8rem 1.8rem;
+margin-top: 20px;
+font-size: 1rem;
+color: #2b2b2b;
+text-decoration: none;
+margin-bottom: 10px;
+}
+
+.featured-thumbnail img {
+max-width: 100%;
+height: auto !important;
+}
+
+.container{
+  clear: both;
+  overflow: auto;
+   padding-top: 0px !important;
+   /* background-color: rgb(43,43,43,0.8); */
+       max-width: 110% !important;
+       padding-top: 10px;
+}
+
+#nav{
+    clear: both;
+    overflow: auto;
+    padding-top: 0px;
+    /* background-color: rgb(43,43,43,0.8); */
+    max-width: 150% !important;
+    max-height: 20%;
+    margin-top: -40px;
+}
+
+
+
+.logo {
+    float: left;
+    height: 15% !important;
+    width: 31% !important;
+    /* background: url("image-folder/1916142.png") no-repeat center center/cover; */
+    background-size: 40%;
+    margin-left: 3%;
+    margin-top: 10px;
+}
+
+/*  Footer Starts */
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: rgb(43,43,43,0.8);
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #2b2b2b;
+}
+.single-cta i {
+  color: #2b2b2b;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #FFB600;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #Faf9f6;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 340px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #faf9f6;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #FFB600;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #FFB600;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #FFB600;
+}
+.footer-widget ul li a {
+  color: #faf9f6;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #FFB600;
+    padding: 13px 20px;
+    border: 1px solid #2b2b2b;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #2b2b2b;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+/*  Footer ends */
+
+
+/* calendar */
+
+
+
+.section {
+    position: relative;
+    height: 70vh;
+}
+
+.section {
+  position: relative;
+  margin-top: 150px !important;
+  }
+
+.section .section-center {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#booking {
+    font-family: 'Raleway', sans-serif;
+}
+
+.booking-form {
+    position: relative;
+    max-width: 642px;
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+    overflow: hidden;
+    background-color: #2b2b2b;
+    background-size: cover;
+    border-radius: 5px;
+    z-index: 20;
+}
+
+.booking-form::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: #2b2b2b;
+    z-index: -1;
+}
+
+.booking-form .form-header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.booking-form .form-header h1 {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 42px;
+    margin: 0px;
+    color: #ffb600;
+}
+
+.booking-form .form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.booking-form .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 60px;
+    padding: 0px 25px;
+    border: none;
+    border-radius: 40px;
+    color: #ffb600;
+    -webkit-box-shadow: 0px 0px 0px 2px transparent;
+    box-shadow: 0px 0px 0px 2px transparent;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+    color: #ffb600;
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+    color: #ffb600;
+}
+
+.booking-form .form-control::placeholder {
+    color: #ffb600;
+}
+
+.booking-form .form-control:focus {
+    -webkit-box-shadow: 0px 0px 0px 2px #ffb600;
+    box-shadow: 0px 0px 0px 2px #ffb600;
+}
+
+.booking-form input[type="date"].form-control {
+    padding-top: 16px;
+}
+
+.booking-form input[type="date"].form-control:invalid {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.booking-form input[type="date"].form-control+.form-label {
+    opacity: 1;
+    top: 10px;
+}
+
+.booking-form select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.booking-form select.form-control:invalid {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.booking-form select.form-control+.select-arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 32px;
+    line-height: 32px;
+    height: 32px;
+    text-align: center;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+    content: '\279C';
+    display: block;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.booking-form select.form-control option {
+    color: #ffb600;
+}
+
+.booking-form .form-label {
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    opacity: 0;
+    color: #ffb600;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    height: 15px;
+    line-height: 15px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.booking-form .form-group.input-not-empty .form-control {
+    padding-top: 16px;
+}
+
+.booking-form .form-group.input-not-empty .form-label {
+    opacity: 1;
+    top: 10px;
+}
+
+.booking-form .submit-btn {
+    color: #fff;
+    background-color: #e35e0a;
+    font-weight: 700;
+    height: 60px;
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 40px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.booking-form .submit-btn:hover,
+.booking-form .submit-btn:focus {
+    opacity: 0.9;
+}
+
+
+.white-mode {
+    text-decoration: none;
+    padding: 17px 40px;
+    background-color: yellow;
+    border-radius: 3px;
+    color: black;
+    transition: .35s ease-in-out;
+    position: absolute;
+    left: 15px;
+    bottom: 15px
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+
+}
+
+.header li a {
+  display: block;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
